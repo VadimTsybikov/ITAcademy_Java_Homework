@@ -27,7 +27,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Loops2">
+  <component name="RunManager" selected="Application.Loops3">
     <configuration name="Loops1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loops1" />
       <module name="loops" />
@@ -38,7 +38,15 @@
     <configuration name="Loops2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loops2" />
       <module name="loops" />
-      <option name="PROGRAM_PARAMETERS" value="f" />
+      <option name="PROGRAM_PARAMETERS" value="5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Loops3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Loops3" />
+      <module name="loops" />
+      <option name="PROGRAM_PARAMETERS" value="258" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -46,9 +54,11 @@
     <list>
       <item itemvalue="Application.Loops1" />
       <item itemvalue="Application.Loops2" />
+      <item itemvalue="Application.Loops3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Loops3" />
         <item itemvalue="Application.Loops2" />
         <item itemvalue="Application.Loops1" />
       </list>
@@ -69,26 +79,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="113" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1591553419612" />
-    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591556823465">
+    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591558012571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591556823465" />
-    <state width="1898" height="290" key="GridCell.Tab.0.bottom" timestamp="1591556834004">
+    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591558012571" />
+    <state width="1898" height="290" key="GridCell.Tab.0.bottom" timestamp="1591557988774">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591556834004" />
-    <state width="1898" height="290" key="GridCell.Tab.0.center" timestamp="1591556834004">
+    <state width="1898" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591557988774" />
+    <state width="1898" height="290" key="GridCell.Tab.0.center" timestamp="1591557988774">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591556834004" />
-    <state width="1898" height="290" key="GridCell.Tab.0.left" timestamp="1591556834004">
+    <state width="1898" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591557988774" />
+    <state width="1898" height="290" key="GridCell.Tab.0.left" timestamp="1591557988774">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591556834004" />
-    <state width="1898" height="290" key="GridCell.Tab.0.right" timestamp="1591556834004">
+    <state width="1898" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591557988774" />
+    <state width="1898" height="290" key="GridCell.Tab.0.right" timestamp="1591557988774">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591556834004" />
+    <state width="1898" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591557988774" />
     <state x="529" y="268" width="861" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1591554825366">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
