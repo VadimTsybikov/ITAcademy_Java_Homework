@@ -33,7 +33,14 @@
       <recent name="D:\Java\ITAcademy\homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Arrays1">
+  <component name="RunManager" selected="Application.Arrays1 (1)">
+    <configuration name="Arrays1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arrays.Arrays1" />
+      <module name="homework2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Arrays1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Arrays1" />
       <module name="arrays" />
@@ -69,9 +76,11 @@
       <item itemvalue="Application.Loops2" />
       <item itemvalue="Application.Loops3" />
       <item itemvalue="Application.Arrays1" />
+      <item itemvalue="Application.Arrays1 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Arrays1 (1)" />
         <item itemvalue="Application.Arrays1" />
         <item itemvalue="Application.Loops3" />
         <item itemvalue="Application.Loops2" />
@@ -102,22 +111,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591631207231" />
-    <state width="1898" height="290" key="GridCell.Tab.0.bottom" timestamp="1591716500052">
+    <state width="1898" height="290" key="GridCell.Tab.0.bottom" timestamp="1591826158629">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591716500052" />
-    <state width="1898" height="290" key="GridCell.Tab.0.center" timestamp="1591716500052">
+    <state width="1898" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
+    <state width="1898" height="290" key="GridCell.Tab.0.center" timestamp="1591826158629">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591716500052" />
-    <state width="1898" height="290" key="GridCell.Tab.0.left" timestamp="1591716500052">
+    <state width="1898" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
+    <state width="1898" height="290" key="GridCell.Tab.0.left" timestamp="1591826158629">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591716500052" />
-    <state width="1898" height="290" key="GridCell.Tab.0.right" timestamp="1591716500052">
+    <state width="1898" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
+    <state width="1898" height="290" key="GridCell.Tab.0.right" timestamp="1591826158629">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591716500052" />
+    <state width="1898" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
     <state x="461" y="171" key="SettingsEditor" timestamp="1591812005501">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
