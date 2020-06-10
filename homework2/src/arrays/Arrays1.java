@@ -1,13 +1,17 @@
 package arrays;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Arrays1 {
-    private static Scanner scanner;
-    private static int[] array;
+    private static Scanner scanner;         //сканер пользовательского ввода
+    private static Random random;           //генератор случайных чисел (будет использоваться для выбора типа цикла вывода на консоль)
+    private static int[] array;             //целочисленный массив
 
     public static void main(String[] arg) {
         scanner = new Scanner(System.in);
+        random = new Random();
+
         arrayInput();
 
         System.out.println("\nВот массив:");
@@ -20,6 +24,8 @@ public class Arrays1 {
         arrayBubbleSort();
     }
 
+    //вывод массива на консоль
+    //тип цикла для вывода определяется генератором случайных чисел (o_O)
     private static void arrayInput() {
         System.out.print("Введи размерность массива: ");
         int arrayLen = scanner.nextInt();
