@@ -23,10 +23,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework1" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,42 +104,50 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="845" y="402" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1591810619175" />
-    <state x="440" y="113" key="#Project_Structure" timestamp="1591553419612">
+    <state x="440" y="113" key="#Project_Structure" timestamp="1591991161894">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="440" y="113" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1591553419612" />
+    <state x="440" y="113" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1591991161894" />
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591631207231">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591631207231" />
-    <state width="1898" height="290" key="GridCell.Tab.0.bottom" timestamp="1591826158629">
+    <state x="761" y="338" key="FileChooserDialogImpl" timestamp="1591991025786">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
-    <state width="1898" height="290" key="GridCell.Tab.0.center" timestamp="1591826158629">
+    <state x="761" y="338" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591991025786" />
+    <state width="1898" height="290" key="GridCell.Tab.0.bottom" timestamp="1591972449664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
-    <state width="1898" height="290" key="GridCell.Tab.0.left" timestamp="1591826158629">
+    <state width="1898" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1591972449664" />
+    <state width="1898" height="290" key="GridCell.Tab.0.center" timestamp="1591972449664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
-    <state width="1898" height="290" key="GridCell.Tab.0.right" timestamp="1591826158629">
+    <state width="1898" height="290" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1591972449664" />
+    <state width="1898" height="290" key="GridCell.Tab.0.left" timestamp="1591972449664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1898" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591826158629" />
-    <state x="461" y="171" key="SettingsEditor" timestamp="1591812005501">
+    <state width="1898" height="290" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1591972449664" />
+    <state width="1898" height="290" key="GridCell.Tab.0.right" timestamp="1591972449664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="171" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591812005501" />
+    <state width="1898" height="290" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1591972449664" />
+    <state x="625" y="299" key="NewModule_or_Project.wizard" timestamp="1591991041368">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="299" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1591991041368" />
+    <state x="461" y="171" key="SettingsEditor" timestamp="1591991266910">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="171" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591991266910" />
     <state x="529" y="268" width="861" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1591554825366">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="529" y="268" width="861" height="633" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1591554825366" />
-    <state x="604" y="159" key="new project wizard" timestamp="1591562358693">
+    <state x="604" y="159" width="1097" height="761" key="new project wizard" timestamp="1591991001806">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="604" y="159" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1591562358693" />
+    <state x="604" y="159" width="1097" height="761" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1591991001806" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1591556348097">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

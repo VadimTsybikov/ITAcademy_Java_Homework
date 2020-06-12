@@ -20,11 +20,6 @@ public class Arrays1 {
         System.out.println("\nВот элементы массива на четных позициях:");
         arrayOutput(true);
 
-        System.out.println("\nМассив после сортировки выбором:");
-        arraySelectionSort();
-
-        arrayMix();
-
         System.out.println("\nМассив после пузырьковой сортировки:");
         arrayBubbleSort();
 
@@ -32,11 +27,6 @@ public class Arrays1 {
 
         System.out.println("\nМассив после шейкерной сортировки:");
         arrayCocktailSort();
-
-        arrayMix();
-
-        System.out.println("\nМассив после сортировки с использованием вставок:");
-        arrayInclusionSort();
     }
 
     //ввод с консоли
@@ -132,26 +122,6 @@ public class Arrays1 {
         arrayOutput(false);
     }
 
-    //сортировка выбором
-    private static void arraySelectionSort() {
-        for (int i = array.length - 1; i > 0; i--) {
-            int max = array[0];
-            int maxPos = 0;
-
-            for (int j = 1; j <= i; j++) {
-                if (max < array[j]) {
-                    max = array[j];
-                    maxPos = j;
-                }
-            }
-
-            int tmp = array[i];
-            array[i] = array[maxPos];
-            array[maxPos] = tmp;
-        }
-        arrayOutput(false);
-    }
-
     //сортировка пузырьком
     private static void arrayBubbleSort()
     {
@@ -191,22 +161,6 @@ public class Arrays1 {
                 }
             }
             lbound++;
-        }
-        arrayOutput(false);
-    }
-
-    //сортировка с использованием вставок
-    private static void arrayInclusionSort() {
-        for (int i = 1; i < array.length; i++) {
-            int val = array[i];
-            int valPos = i;
-
-            while ((valPos > 0) && (array[valPos] > array[valPos - 1])) {
-                array[valPos] = array[valPos - 1];
-                valPos--;
-            }
-
-            array[valPos] = val;
         }
         arrayOutput(false);
     }
