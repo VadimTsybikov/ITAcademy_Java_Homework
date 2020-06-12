@@ -153,7 +153,7 @@ public class Arrays1 {
             }
             ubound--;
 
-            for (int i = ubound; i < lbound; i--) {
+            for (int i = ubound; i > lbound; i--) {
                 if (array[i - 1] > array[i]) {
                     int tmp = array[i - 1];
                     array[i - 1] = array[i];
