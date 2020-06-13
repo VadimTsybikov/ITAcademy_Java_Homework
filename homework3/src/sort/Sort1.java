@@ -19,12 +19,12 @@ public class Sort1 {
         arrayOutput(array);
 
         System.out.println("\nМассив после сортировки выбором:");
-        arraySelectionSort();
+        arrayOutput(arraySelectionSort(array));
 
         arrayMix();
 
         System.out.println("\nМассив после сортировки с использованием вставок:");
-        arrayInclusionSort();
+        arrayOutput(arrayInclusionSort(array));
 
         arrayMix();
 
@@ -68,39 +68,41 @@ public class Sort1 {
     }
 
     //сортировка выбором
-    private static void arraySelectionSort() {
-        for (int i = array.length - 1; i > 0; i--) {
-            int max = array[0];
+    private static int[] arraySelectionSort(int[] _array) {
+        for (int i = _array.length - 1; i > 0; i--) {
+            int max = _array[0];
             int maxPos = 0;
 
             for (int j = 1; j <= i; j++) {
-                if (max < array[j]) {
-                    max = array[j];
+                if (max < _array[j]) {
+                    max = _array[j];
                     maxPos = j;
                 }
             }
 
-            int tmp = array[i];
-            array[i] = array[maxPos];
-            array[maxPos] = tmp;
+            int tmp = _array[i];
+            _array[i] = _array[maxPos];
+            _array[maxPos] = tmp;
         }
-        arrayOutput(array);
+
+        return _array;
     }
 
     //сортировка с использованием вставок
-    private static void arrayInclusionSort() {
-        for (int i = 1; i < array.length; i++) {
-            int val = array[i];
+    private static int[] arrayInclusionSort(int[] _array) {
+        for (int i = 1; i < _array.length; i++) {
+            int val = _array[i];
             int valPos = i;
 
-            while ((valPos > 0) && (array[valPos - 1] > val)) {
-                array[valPos] = array[valPos - 1];
+            while ((valPos > 0) && (_array[valPos - 1] > val)) {
+                _array[valPos] = _array[valPos - 1];
                 valPos--;
             }
 
-            array[valPos] = val;
+            _array[valPos] = val;
         }
-        arrayOutput(array);
+
+        return _array;
     }
 
     //сортировка слиянием
@@ -121,26 +123,19 @@ public class Sort1 {
         int arrayTop = 0;
         while ((part1Top < part1.length) && (part2Top < part2.length)) {
             if (part1[part1Top] < part2[part2Top]) {
-                _array[arrayTop] = part1[part1Top];
-                part1Top++;
+                _array[arrayTop++] = part1[part1Top++];
             }
             else {
-                _array[arrayTop] = part2[part2Top];
-                part2Top++;
+                _array[arrayTop++] = part2[part2Top++];
             }
-            arrayTop++;
         }
 
         while (part1Top < part1.length) {
-            _array[arrayTop] = part1[part1Top];
-            part1Top++;
-            arrayTop++;
+            _array[arrayTop++] = part1[part1Top++];
         }
 
         while (part2Top < part2.length) {
-            _array[arrayTop] = part2[part2Top];
-            part2Top++;
-            arrayTop++;
+            _array[arrayTop++] = part2[part2Top++];
         }
 
         return _array;
