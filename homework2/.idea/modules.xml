@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../advanced/advanced.iml" filepath="$PROJECT_DIR$/../advanced/advanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/../homework1/homework1.iml" filepath="$PROJECT_DIR$/../homework1/homework1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/homework2.iml" filepath="$PROJECT_DIR$/.idea/homework2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../homework3/homework3.iml" filepath="$PROJECT_DIR$/../homework3/homework3.iml" />
