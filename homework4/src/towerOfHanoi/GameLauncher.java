@@ -26,6 +26,7 @@ public class GameLauncher {
 
     //инициализация игрового поля
     private void initPlayField() {
+        //повторять запрос числа колец до тех пор, пока не будут введены адекватные значения
         while (true) {
             System.out.print("Укажите число колец (3-8): ");
 
@@ -65,8 +66,9 @@ public class GameLauncher {
 
     //запрос направления перемещения кольца, валидация введенных данных
     private void askMovement() {
+        //повторять запрос вектора перемещения до тех пор, пока не будут введены адекватные значения
         while (true) {
-            System.out.printf("Введите два числа от 1 до %d) (с какого штыря переместить кольцо на какой): ", pinsCnt);
+            System.out.printf("Введите два числа от 1 до %d через пробел) (с какого штыря переместить кольцо на какой): ", pinsCnt);
             byte fromPin = scanner.nextByte();
             byte toPin = scanner.nextByte();
 
