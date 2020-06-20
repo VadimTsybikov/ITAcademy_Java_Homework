@@ -58,7 +58,7 @@ public class GameLauncher {
     private void printPlayField() {
         for (int i = playField.length - 1; i >= 0; i--) {
             for (byte ring : playField[i]) {
-                System.out.print(ring + " ");
+                System.out.print((ring > 0 ? ring : "*") + " ");
             }
             System.out.println();
         }
