@@ -21,6 +21,8 @@ public class GameLauncher {
             printPlayField();
             askMovement();
         }
+        
+        printPlayField();
         System.out.println("Вы выиграли!");
     }
 
