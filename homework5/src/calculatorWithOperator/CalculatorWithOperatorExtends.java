@@ -1,7 +1,7 @@
 package calculatorWithOperator;
 
 public class CalculatorWithOperatorExtends extends CalculatorWithOperator {
-    //возведение вещественного чистла в целочисленную степень
+    //возведение вещественного числа в целочисленную степень
     public static double power(double a, int b) {
         return Math.pow(a, b);
     }

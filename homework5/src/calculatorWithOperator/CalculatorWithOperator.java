@@ -21,7 +21,7 @@ public class CalculatorWithOperator {
         return a * b;
     }
 
-    //возведение вещественного чистла в целочисленную степень
+    //возведение вещественного числа в целочисленную степень
     public static double power(double a, int b) {
         double result = 1;
         for (int i = 1; i <= b; i++) {
