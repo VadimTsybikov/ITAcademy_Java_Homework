@@ -3,15 +3,37 @@ package towerOfHanoi;
 import java.util.Scanner;
 
 public class TowerOfHanoiMain {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        GameLauncher launcher = new GameLauncher();
+    private static Scanner scanner;
+    private static GameLauncher launcher;
 
-        boolean repeat = false;
-        do {
-            launcher.Start();
-            System.out.println("Повторить игру (y/n)?");
-            repeat = scanner.nextLine().equals("y");
-        } while (repeat);
+    public static void main(String[] args) {
+        scanner = new Scanner(System.in);
+        launcher = new GameLauncher();
+
+        printMain();
+    }
+
+    public static void printMain() {
+        while (true) {
+            System.out.println("ХАНОЙСКАЯ БАШНЯ:");
+            System.out.println("1. Начать игру");
+            System.out.println("2. Демо");
+            System.out.println("3. Выход");
+
+            int selectedCase = scanner.nextInt();
+            switch (selectedCase) {
+                case 1: {
+                    launcher.start();
+                    break;
+                }
+                case 2: {
+                    launcher.autoplay();
+                    break;
+                }
+                case 3: {
+                    return;
+                }
+            }
+        }
     }
 }

@@ -14,16 +14,25 @@ public class GameLauncher {
     }
 
     //запуск игрового процесса
-    public void Start() {
+    public void start() {
         initPlayField();
 
         while (!isDone()) {
             printPlayField();
             askMovement();
         }
-        
+
         printPlayField();
         System.out.println("Вы выиграли!");
+    }
+
+    //автоматическое пошаговое решение задачи
+    public void autoplay() {
+        initPlayField();
+
+        autoMove(ringsCnt, (byte)0, (byte)2);
+
+        System.out.println("Задача решена!\n");
     }
 
     //инициализация игрового поля
@@ -70,7 +79,7 @@ public class GameLauncher {
     private void askMovement() {
         //повторять запрос вектора перемещения до тех пор, пока не будут введены адекватные значения
         while (true) {
-            System.out.printf("Введите два числа от 1 до %d через пробел) (с какого штыря переместить кольцо на какой): ", pinsCnt);
+            System.out.printf("Введите два числа от 1 до %d через пробел (с какого штыря переместить кольцо на какой): ", pinsCnt);
             byte fromPin = scanner.nextByte();
             byte toPin = scanner.nextByte();
 
@@ -105,6 +114,22 @@ public class GameLauncher {
         }
     }
 
+    //автоматическое перемещение кольца
+    private void autoMove(byte ringsCnt, byte fromPin, byte toPin) {
+        if (ringsCnt == 0)
+            return;
+
+        byte restPin = (byte)(3 - fromPin - toPin);
+
+        autoMove((byte)(ringsCnt - 1), fromPin, restPin);
+        moveRing(fromPin, toPin);
+
+        System.out.printf("\n%d -> %d\n", fromPin + 1, toPin + 1);
+        printPlayField();
+
+        autoMove((byte)(ringsCnt - 1), restPin, toPin);
+    }
+
     //получить верхнее кольцо на штыре (если штырь пустой - вернуть 0)
     private byte getTopRing(byte pinIndex) {
         byte lastRingIndex = pinTopIndeces[pinIndex];
@@ -115,7 +140,7 @@ public class GameLauncher {
     }
 
     //перемещение кольца с одного штыря на другой
-    private void moveRing(byte fromPin, byte toPin) {
+    private void moveRing(int fromPin, int toPin) {
         byte ring = playField[pinTopIndeces[fromPin]][fromPin];
 
         playField[pinTopIndeces[fromPin]][fromPin] = 0;
