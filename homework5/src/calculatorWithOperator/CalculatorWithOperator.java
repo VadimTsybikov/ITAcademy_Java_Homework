@@ -2,31 +2,26 @@ package calculatorWithOperator;
 
 public class CalculatorWithOperator implements CalcInterface {
     //вещественное сложение
-    @Override
     public double sum(double a, double b) {
         return a + b;
     }
 
     //вещественное вычитание
-    @Override
     public double subtract(double a, double b) {
         return a - b;
     }
 
     //вещественное деление
-    @Override
     public double divide(double a, double b) {
         return a / b;
     }
 
     //вещественное умножение
-    @Override
     public double multiply(double a, double b) {
         return a * b;
     }
 
     //возведение вещественного числа в целочисленную степень
-    @Override
     public double power(double a, int b) {
         double result = 1;
         for (int i = 1; i <= b; i++) {
@@ -36,13 +31,11 @@ public class CalculatorWithOperator implements CalcInterface {
     }
 
     //модуль вещественного числа
-    @Override
     public double abs(double a) {
         return (a < 0) ? a * -1.0 : a;
     }
 
     //извлечение целочисленного корня из вещественного числа
-    @Override
     public double root(double a, int b) {
         double result = 0;
 
