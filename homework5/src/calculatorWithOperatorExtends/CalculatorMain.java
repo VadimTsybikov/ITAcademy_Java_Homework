@@ -1,4 +1,4 @@
-package calculatorWithOperator;
+package calculatorWithOperatorExtends;
 
 import java.text.DecimalFormat;
 
@@ -6,8 +6,8 @@ public class CalculatorMain {
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat("#.##");   //для форматированного вывода вещественных чисел (без незначащих вещественных нулей)
 
-        System.out.println("Реализация CalculatorWithOperator:");
-        CalculatorWithOperator calc = new CalculatorWithOperator();
+        System.out.println("Реализация CalculatorWithOperatorExtends:");
+        CalculatorWithOperatorExtends calc = new CalculatorWithOperatorExtends();
 
         double a = 4.1;
         double b = calc.multiply(15, 7);

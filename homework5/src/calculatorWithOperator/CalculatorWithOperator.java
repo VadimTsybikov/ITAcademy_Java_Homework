@@ -1,28 +1,33 @@
 package calculatorWithOperator;
 
-public class CalculatorWithOperator {
+public class CalculatorWithOperator implements CalcInterface {
     //вещественное сложение
-    public static double sum(double a, double b) {
+    @Override
+    public double sum(double a, double b) {
         return a + b;
     }
 
     //вещественное вычитание
-    public static double subtract(double a, double b) {
+    @Override
+    public double subtract(double a, double b) {
         return a - b;
     }
 
     //вещественное деление
-    public static double divide(double a, double b) {
+    @Override
+    public double divide(double a, double b) {
         return a / b;
     }
 
     //вещественное умножение
-    public static double multiply(double a, double b) {
+    @Override
+    public double multiply(double a, double b) {
         return a * b;
     }
 
     //возведение вещественного числа в целочисленную степень
-    public static double power(double a, int b) {
+    @Override
+    public double power(double a, int b) {
         double result = 1;
         for (int i = 1; i <= b; i++) {
             result *= a;
@@ -31,12 +36,14 @@ public class CalculatorWithOperator {
     }
 
     //модуль вещественного числа
-    public static double abs(double a) {
+    @Override
+    public double abs(double a) {
         return (a < 0) ? a * -1.0 : a;
     }
 
     //извлечение целочисленного корня из вещественного числа
-    public static double root(double a, int b) {
+    @Override
+    public double root(double a, int b) {
         double result = 0;
 
         //если требуется вычислить корень четной степени отрицательного числа - вернуть не-число

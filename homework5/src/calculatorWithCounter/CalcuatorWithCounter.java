@@ -1,10 +1,13 @@
-package calculatorWithOperator;
+package calculatorWithCounter;
+
+import calculatorWithOperator.CalcInterface;
+import calculatorWithOperator.CalculatorWithOperator;
 
 public class CalcuatorWithCounter {
-    private CalculatorWithOperator calculator;
+    private CalcInterface calculator;
     private int countOperation;
 
-    public CalcuatorWithCounter(CalculatorWithOperator calculator) {
+    public CalcuatorWithCounter(CalcInterface calculator) {
         this.calculator = calculator;
         countOperation = 0;
     }
@@ -42,6 +45,10 @@ public class CalcuatorWithCounter {
     public double root(double a, int b) {
         countOperation++;
         return calculator.root(a, b);
+    }
+
+    public String getCoreTypeName() {
+        return calculator.getClass().toString();
     }
 
     public int getCountOperation() {
