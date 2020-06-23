@@ -2,22 +2,22 @@ package calculatorWithOperator;
 
 public class CalculatorWithOperator implements CalcInterface {
     //вещественное сложение
-    public double sum(double a, double b) {
+    public final double sum(double a, double b) {
         return a + b;
     }
 
     //вещественное вычитание
-    public double subtract(double a, double b) {
+    public final double subtract(double a, double b) {
         return a - b;
     }
 
     //вещественное деление
-    public double divide(double a, double b) {
+    public final double divide(double a, double b) {
         return a / b;
     }
 
     //вещественное умножение
-    public double multiply(double a, double b) {
+    public final double multiply(double a, double b) {
         return a * b;
     }
 

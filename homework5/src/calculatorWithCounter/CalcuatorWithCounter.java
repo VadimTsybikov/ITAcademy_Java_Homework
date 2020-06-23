@@ -13,25 +13,25 @@ public class CalcuatorWithCounter {
     }
 
     //вещественное сложение
-    public double sum(double a, double b) {
+    public final double sum(double a, double b) {
         countOperation++;
         return calculator.sum(a, b);
     }
 
     //вещественное вычитание
-    public double subtract(double a, double b) {
+    public final double subtract(double a, double b) {
         countOperation++;
         return calculator.subtract(a, b);
     }
 
     //вещественное деление
-    public double divide(double a, double b) {
+    public final double divide(double a, double b) {
         countOperation++;
         return calculator.divide(a, b);
     }
 
     //вещественное умножение
-    public double multiply(double a, double b) {
+    public final double multiply(double a, double b) {
         countOperation++;
         return calculator.multiply(a, b);
     }
@@ -55,12 +55,12 @@ public class CalcuatorWithCounter {
     }
 
     //информация о типе обернутого объекта
-    public String getCoreTypeName() {
+    public final String getCoreTypeName() {
         return calculator.getClass().toString();
     }
 
     //количество выполненных операций
-    public int getCountOperation() {
+    public final int getCountOperation() {
         return countOperation;
     }
 }
