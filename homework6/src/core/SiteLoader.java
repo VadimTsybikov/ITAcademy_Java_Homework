@@ -14,7 +14,7 @@ public abstract class SiteLoader {
     public enum Currency{
         USD("145"),
         EUR("292"),
-        RUS("298");
+        RUB("298");
 
         private String id;
 

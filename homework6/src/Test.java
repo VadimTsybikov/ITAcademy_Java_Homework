@@ -1,11 +1,12 @@
+import core.AlphaBankLoader;
 import core.NBRBLoader;
 import core.SiteLoader;
 
 public class Test {
     public static void main(String[] args) {
-        NBRBLoader loader = new NBRBLoader();
-        System.out.println(loader.load(SiteLoader.Currency.EUR));
-        System.out.println(loader.load(SiteLoader.Currency.RUS));
-        System.out.println(loader.load(SiteLoader.Currency.USD));
+        SiteLoader loader = new AlphaBankLoader();
+        System.out.println("EUR->BYN: " + loader.load(SiteLoader.Currency.EUR));
+        System.out.println("RUS->BYN: " + loader.load(SiteLoader.Currency.RUB));
+        System.out.println("USD->BYN: " + loader.load(SiteLoader.Currency.USD));
     }
 }
