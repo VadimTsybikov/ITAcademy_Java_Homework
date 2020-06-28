@@ -1,4 +1,4 @@
-package calculatorStringExpression;
+package calculatorWithExpression.core;
 
 public class SimpleOperation {
     private Operation operator;

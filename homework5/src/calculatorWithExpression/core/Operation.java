@@ -1,4 +1,4 @@
-package calculatorStringExpression;
+package calculatorWithExpression.core;
 
 public enum Operation {
     NONE,
