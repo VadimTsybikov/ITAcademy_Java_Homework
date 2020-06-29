@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Загрузчик курса с сайта Альфа-банк
+ * Загрузчик курса с сайта Беларусбанка
  */
 public class BelarusBankLoader extends SiteLoader{
 
