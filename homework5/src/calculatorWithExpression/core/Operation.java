@@ -6,6 +6,5 @@ public enum Operation {
     SUBTRACT,
     DIVIDE,
     MULTIPLY,
-    POWER,
-    ABS
+    POWER
 }

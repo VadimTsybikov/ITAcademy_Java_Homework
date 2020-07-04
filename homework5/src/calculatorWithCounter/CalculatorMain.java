@@ -13,7 +13,7 @@ public class CalculatorMain {
         System.out.println("Реализация CalculatorWithCounter:");
         System.out.println();
 
-        //поочередное "обёртывание" всех классов, реализующих интерфейс CalcInterface
+        //поочередное "обёртывание" всех классов, реализующих интерфейс ICalculator
         System.out.println("Демонстрация \"Декоратора\"");
         CalcuatorWithCounter calcWithCounter = new CalcuatorWithCounter(new CalculatorWithOperator());
         System.out.println("обёрнут " + calcWithCounter.getCoreTypeName());

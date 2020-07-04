@@ -1,9 +1,9 @@
 package calculatorWithOperatorExtends;
 
-import calculatorWithOperator.CalcInterface;
 import calculatorWithOperator.CalculatorWithOperator;
+import calculatorWithOperator.ICalculator;
 
-public class CalculatorWithOperatorExtends extends CalculatorWithOperator implements CalcInterface {
+public class CalculatorWithOperatorExtends extends CalculatorWithOperator implements ICalculator {
     //переопределение метода базового класса соответствующим функационалом библиотеки Math
     public double power(double a, int b) {
         return Math.pow(a, b);

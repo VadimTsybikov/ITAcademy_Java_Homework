@@ -1,6 +1,6 @@
 package calculatorWithOperator;
 
-public class CalculatorWithOperator implements CalcInterface {
+public class CalculatorWithOperator implements ICalculator {
     //вещественное сложение
     public final double sum(double a, double b) {
         return a + b;

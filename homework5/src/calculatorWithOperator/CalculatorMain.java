@@ -9,6 +9,8 @@ public class CalculatorMain {
         System.out.println("Реализация CalculatorWithOperator:");
         CalculatorWithOperator calc = new CalculatorWithOperator();
 
+        double x = calc.root(3, 2);
+
         double a = 4.1;
         double b = calc.multiply(15, 7);
         double c = calc.divide(28, 5);

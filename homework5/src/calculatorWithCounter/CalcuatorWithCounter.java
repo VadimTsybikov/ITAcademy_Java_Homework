@@ -1,13 +1,12 @@
 package calculatorWithCounter;
 
-import calculatorWithOperator.CalcInterface;
-import calculatorWithOperator.CalculatorWithOperator;
+import calculatorWithOperator.ICalculator;
 
 public class CalcuatorWithCounter {
-    private CalcInterface calculator;
+    private ICalculator calculator;
     private int countOperation;
 
-    public CalcuatorWithCounter(CalcInterface calculator) {
+    public CalcuatorWithCounter(ICalculator calculator) {
         this.calculator = calculator;
         countOperation = 0;
     }

@@ -1,12 +1,12 @@
 package calculatorWithMemory;
 
-import calculatorWithOperator.CalcInterface;
+import calculatorWithOperator.ICalculator;
 
 public class CalculatorWithMemory {
-    private CalcInterface calculator;
+    private ICalculator calculator;
     private double memory;
 
-    public CalculatorWithMemory(CalcInterface calculator) {
+    public CalculatorWithMemory(ICalculator calculator) {
         this.calculator = calculator;
         memory = 0;
     }

@@ -22,4 +22,8 @@ public class Stack {
         else
             return null;
     }
+
+    public StackItem getHead() {
+        return head;
+    }
 }

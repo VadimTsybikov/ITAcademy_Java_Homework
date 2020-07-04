@@ -1,8 +1,8 @@
 package calculatorWithOperatorCopy;
 
-import calculatorWithOperator.CalcInterface;
+import calculatorWithOperator.ICalculator;
 
-public class CalculatorWithOperatorCopy implements CalcInterface {
+public class CalculatorWithOperatorCopy implements ICalculator {
     //вещественное сложение
     public final double sum(double a, double b) {
         return a + b;
