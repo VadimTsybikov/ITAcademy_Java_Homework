@@ -15,31 +15,32 @@ public class SearchMain {
 
         //определение количества слов
         EasySearch easySearch = new EasySearch();
-        System.out.println("Количество слов \"война\": " + easySearch.search(lines, "война"));
-        System.out.println("Количество слов \"и\": " + easySearch.search(lines, "и"));
-        System.out.println("Количество слов \"мир\": " + easySearch.search(lines, "мир"));
+        String wordToFind = "война";
+        System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
+        wordToFind = "и";
+        System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
+        wordToFind = "мир";
+        System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
+        wordToFind = "не";
+        System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
         System.out.println();
 
         //определение слов, использованных в тексте
-        HashSet<String> usedWords = new HashSet<>();
+        HashSet<String> usedWordsSet = new HashSet<>();
         for (String line : lines) {
-            if (!line.isEmpty()) {
-                String[] words = line.split("\\P{L}+");
-                for (String word : words) {
-                    if (!word.isEmpty()) {
-                        usedWords.add(word);
-                    }
-                }
+            String[] words = splitString(line);
+            for (String word : words) {
+                usedWordsSet.add(word);
             }
         }
-        System.out.println("Количество уникальных слов в тексте: " + usedWords.size());
+        System.out.println("Количество уникальных слов в тексте: " + usedWordsSet.size());
         System.out.println();
 
         //подсчет количества появления слов в тексте
         HashMap<String, Integer> usedWordsCnt = new HashMap<>();
         for (String line : lines) {
             if (!line.isEmpty()) {
-                String[] words = line.split("\\P{L}+");
+                String[] words = splitString(line);
                 for (String word : words) {
                     if (!word.isEmpty()) {
                         if (!usedWordsCnt.containsKey(word)) {
@@ -80,5 +81,27 @@ public class SearchMain {
             e.printStackTrace();
         }
         return content;
+    }
+
+    private static String[] splitString(String source) {
+        String[] words = source.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            if (!words[i].isEmpty()) {
+                //удаление небуквенных и нечисловых знаков в начале слова
+                while ((!words[i].isEmpty()) && (!Character.isLetterOrDigit(words[i].charAt(0)))) {
+                    words[i] = words[i].substring(1);
+                }
+
+                //удаление небуквенных и нечисловых знаков в конце слова
+                int lastCharPos = words[i].length() - 1;
+                while ((!words[i].isEmpty()) && (!Character.isLetterOrDigit(words[i].charAt(lastCharPos)))) {
+                    words[i] = words[i].substring(0, lastCharPos);
+                    lastCharPos--;
+                }
+
+                words[i] = words[i].toLowerCase();
+            }
+        }
+        return words;
     }
 }
