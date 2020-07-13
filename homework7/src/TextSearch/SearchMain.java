@@ -21,7 +21,7 @@ public class SearchMain {
         System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
         wordToFind = "мир";
         System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
-        wordToFind = "не";
+        wordToFind = "что";
         System.out.printf("Количество слов \"%s\": %d\n", wordToFind, easySearch.search(lines, wordToFind));
         System.out.println();
 
