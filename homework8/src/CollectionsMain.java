@@ -7,60 +7,56 @@ import java.util.Random;
 
 public class CollectionsMain {
     public static void main(String[] args) {
-        WorkWithLinkedList();
-        WorkWithArrayList();
+        workWithLinkedList();
+        workWithArrayList();
     }
 
     //работа с LinkedList<Person>
-    private static void WorkWithLinkedList() {
+    private static void workWithLinkedList() {
         //заполнение 1.000.000 элементами
-        long personsFillStart = System.currentTimeMillis();
+        Stopwatch.start();      //запуск секундомера
         LinkedList<Person> persons = new LinkedList();
         for (int i = 0; i < 1_000_000; i++) {
             persons.add(new Person(RandomString.random(8), RandomString.random(8)));
         }
-        long personsFillEnd = System.currentTimeMillis();
-        long personsFillTimeout = personsFillEnd - personsFillStart;
-        System.out.println("Время заполнения LinkedList<Person> (элементов " + persons.size() + "): " + personsFillTimeout);    // 3671 ms
+        Stopwatch.stop();       //остановка секундомера
+        System.out.println("Время заполнения LinkedList<Person> (элементов " + persons.size() + "): " + Stopwatch.getTimePass());    // 3671 ms
 
         //сортировка компаратором PersonPassLengthComparator
         persons.sort(new PersonPassLengthComparator());
 
         //очистка через Iterator
         Iterator<Person> iterator = persons.iterator();
-        long personsClearStart = System.currentTimeMillis();
+        Stopwatch.start();      //запуск секундомера
         while (iterator.hasNext()) {
             persons.remove(0);
             iterator = persons.iterator();
         }
-        long personsClearEnd = System.currentTimeMillis();
-        long personsClearTimeout = personsClearEnd - personsClearStart;
-        System.out.println("Время очистки LinkedList<Person> (элементов " + persons.size() + "): " + personsClearTimeout);    // 47 ms
+        Stopwatch.stop();       //остановка секундомера
+        System.out.println("Время очистки LinkedList<Person> (элементов " + persons.size() + "): " + Stopwatch.getTimePass());    // 47 ms
     }
 
     //работа с ArrayList<Animal>
-    private static void WorkWithArrayList() {
+    private static void workWithArrayList() {
         //заполнение 1.000.000 элементами
-        long animalsFillStart = System.currentTimeMillis();
+        Stopwatch.start();      //запуск секундомера
         ArrayList<Animal> animals = new ArrayList();
         Random randomGen = new Random();
         for (int i = 0; i < 1_000_000; i++) {
             animals.add(new Animal((byte)randomGen.nextInt(), RandomString.random(8)));
         }
-        long animalsFillEnd = System.currentTimeMillis();
-        long animalsFillTimeout = animalsFillEnd - animalsFillStart;
-        System.out.println("Время заполнения ArrayList<Animal> (элементов " + animals.size() + "): " + animalsFillTimeout);     // 418 ms
+        Stopwatch.stop();       //остановка секундомера
+        System.out.println("Время заполнения ArrayList<Animal> (элементов " + animals.size() + "): " + Stopwatch.getTimePass());     // 418 ms
 
         //сортировка компаратором AnimalAgeComparator
         animals.sort(new AnimalAgeComparator());
 
         //очистка циклом while
-        long animalsClearStart = System.currentTimeMillis();
+        Stopwatch.start();      //запуск секундомера
         while (animals.size() > 0) {
             animals.remove(0);
         }
-        long animalsClearEnd = System.currentTimeMillis();
-        long animalsClearTimeout = animalsClearEnd - animalsClearStart;
-        System.out.println("Время очистки ArrayList<Animal> (элементов " + animals.size() + "): " + animalsClearTimeout);       // 138026 ms
+        Stopwatch.stop();       //остановка секундомера
+        System.out.println("Время очистки ArrayList<Animal> (элементов " + animals.size() + "): " + Stopwatch.getTimePass());       // 138026 ms
     }
 }

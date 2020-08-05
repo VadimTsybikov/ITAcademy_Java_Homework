@@ -8,11 +8,12 @@ public class PersonPassLengthComparator implements Comparator<Person> {
         int passLen1 = o1.getPassword().length();
         int passLen2 = o2.getPassword().length();
 
-        if (passLen1 < passLen2)
+        if (passLen1 < passLen2) {
             return -1;
-        else if (passLen1 > passLen2)
+        } else if (passLen1 > passLen2) {
             return 1;
-        else
+        } else {
             return 0;
+        }
     }
 }

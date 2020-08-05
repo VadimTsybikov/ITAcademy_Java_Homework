@@ -8,11 +8,12 @@ public class AnimalAgeComparator implements Comparator<Animal> {
         int age1 = o1.getAge();
         int age2 = o2.getAge();
 
-        if (age1 < age2)
+        if (age1 < age2) {
             return -1;
-        else if (age1 > age2)
+        } else if (age1 > age2) {
             return 1;
-        else
+        } else {
             return 0;
+        }
     }
 }
