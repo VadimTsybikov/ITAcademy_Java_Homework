@@ -1,86 +1,10 @@
-package sort;
+package sort.core;
 
 import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
 
-public class Sort1 {
-    private static Scanner scanner;         //сканер пользовательского ввода
-    private static Random random;           //генератор случайных чисел (для перемешивания массива)
-    private static int[] array;             //целочисленный массив
-
-    public static void main(String[] args) {
-        scanner = new Scanner(System.in);
-        random = new Random();
-
-        arrayInput();
-
-        System.out.println("\nВот массив:");
-        arrayOutput(array);
-
-        arraySelectionSort(array);
-        System.out.println("\nМассив после сортировки выбором:");
-        arrayOutput(array);
-
-        arrayMix();
-
-        arrayInclusionSort(array);
-        System.out.println("\nМассив после сортировки с использованием вставок:");
-        arrayOutput(array);
-
-        arrayMix();
-
-        arrayMergeSort(array);
-        System.out.println("\nМассив после сортировки слиянием:");
-        arrayOutput(array);
-
-        arrayMix();
-
-        arrayQuickSort(array, 0, array.length - 1);
-        System.out.println("\nМассив после сортировки c помощью разделения:");
-        arrayOutput(array);
-    }
-
-    //ввод с консоли
-    private static void arrayInput() {
-        System.out.print("Введи размерность массива: ");
-        int arrayLen = scanner.nextInt();
-
-        array = new int[arrayLen];
-
-        System.out.println("Заполни массив:");
-        for (int i = 0; i < array.length; i++) {
-            System.out.printf("array[%d]:  ", i);
-            array[i] = scanner.nextInt();
-        }
-    }
-
-    //вывод массива на консоль
-    private static void arrayOutput(int[] _array) {
-        for (int i = 0; i < _array.length; i++) {
-            System.out.print(_array[i] + " ");
-        }
-        System.out.println();
-    }
-
-    //перемешивание элементов массива (для последующей демонстрации сортировки)
-    private static void arrayMix() {
-        for (int i = 0; i < array.length; i++) {
-            //вычисяем случайную позицию в оставшейся части массива
-            int destIndex = Math.abs(random.nextInt() + i) % array.length;
-
-            //обмениваем значение этой случайной позиции с текущей
-            int tmp = array[i];
-            array[i] = array[destIndex];
-            array[destIndex] = tmp;
-        }
-
-        System.out.println("\nМассив перемешан:");
-        arrayOutput(array);
-    }
-
+public class Sort {
     //сортировка выбором
-    private static void arraySelectionSort(int[] _array) {
+    public static void arraySelectionSort(int[] _array) {
         //сортируемый диапазон массива постепенно сужается с конца
         for (int i = _array.length - 1; i > 0; i--) {
             //инициализитуем текущее значение на итерации сортировки
@@ -103,7 +27,7 @@ public class Sort1 {
     }
 
     //сортировка с использованием вставок
-    private static void arrayInclusionSort(int[] _array) {
+    public static void arrayInclusionSort(int[] _array) {
         for (int i = 1; i < _array.length; i++) {
             //инициализируем текущее значение на итерации сортировки
             int val = _array[i];
@@ -121,7 +45,7 @@ public class Sort1 {
     }
 
     //сортировка слиянием (метод возвращает результат для использования в порождающих итерациях рекурсии)
-    private static int[] arrayMergeSort(int[] _array) {
+    public static int[] arrayMergeSort(int[] _array) {
         int part1Length = _array.length / 2;        //размерность первой сортируемой части
 
         //копирование первой части в отдельный массив
@@ -164,7 +88,7 @@ public class Sort1 {
     }
 
     //сортировка с помощью разделения (работает с оригинальным массивом, индексами указывается сортируемый диапазон)
-    private static void arrayQuickSort(int[] _array, int _start, int _end) {
+    public static void arrayQuickSort(int[] _array, int _start, int _end) {
         if (_end - _start > 0) {
             int basePoint = _start + (_end - _start) / 2;   //опорная точка
             int baseVal = _array[basePoint];                //значение опорной точки
